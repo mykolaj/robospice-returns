@@ -15,7 +15,7 @@
 
 	<groupId>com.octo.android.robospice</groupId>
 	<artifactId>robospice-parent</artifactId>
-	<version>1.4.14</version>
+	<version>1.5.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Robospice - Parent</name>
 	<description>RoboSpice is a modular android library that eases the development of Data-Driven Android applications.</description>
@@ -90,6 +90,7 @@
 		<module>extensions/robospice-spring-android-parent</module>
 		<module>extensions/robospice-google-http-client-parent</module>
 		<module>extensions/robospice-retrofit-parent</module>
+		<module>extensions/robospice-retrofit2-parent</module>
 		<module>extensions/robospice-ormlite-parent</module>
 		<module>extensions/robospice-ui-spicelist-parent</module>
 		<module>extensions/robospice-okhttp-parent</module>
@@ -298,6 +299,7 @@
 									robospice-cache-parent/robospice-cache:
 									extensions/robospice-spring-android-parent/robospice-spring-android:
 									extensions/robospice-retrofit-parent/robospice-retrofit:
+									extensions/robospice-retrofit2-parent/robospice-retrofit2:
 									extensions/robospice-google-http-client-parent/robospice-google-http-client:
 									extensions/robospice-ormlite-parent/robospice-ormlite:
 									extensions/robospice-ui-spicelist-parent/robospice-ui-spicelist:
@@ -453,6 +455,7 @@
 						extensions/robospice-spring-android-parent/robospice-spring-android:
 						extensions/robospice-google-http-client-parent/robospice-google-http-client:
 						extensions/robospice-retrofit-parent/robospice-retrofit:
+						extensions/robospice-retrofit2-parent/robospice-retrofit2:
 						extensions/robospice-ormlite-parent/robospice-ormlite:
 						extensions/robospice-ui-spicelist-parent/robospice-ui-spicelist:
 					</sourcepath>
