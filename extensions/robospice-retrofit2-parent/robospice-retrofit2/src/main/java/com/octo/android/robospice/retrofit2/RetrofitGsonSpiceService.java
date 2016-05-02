@@ -8,7 +8,7 @@ import android.app.Application;
 import com.octo.android.robospice.persistence.CacheManager;
 import com.octo.android.robospice.persistence.exception.CacheCreationException;
 import com.octo.android.robospice.persistence.retrofit2.RetrofitObjectPersisterFactory;
-import com.octo.android.robospice.persistence.retrofit2.transformers.RetrofitGsonConvertAware;
+import com.octo.android.robospice.persistence.retrofit2.converter.RetrofitGsonResponseConverter;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
@@ -35,7 +35,7 @@ public abstract class RetrofitGsonSpiceService extends RetrofitSpiceService {
     }
 
     @Override
-    protected RetrofitGsonConvertAware createRetrofitToCacheConverter() {
-        return new RetrofitGsonConvertAware();
+    protected RetrofitGsonResponseConverter createRetrofitToCacheConverter() {
+        return new RetrofitGsonResponseConverter();
     }
 }

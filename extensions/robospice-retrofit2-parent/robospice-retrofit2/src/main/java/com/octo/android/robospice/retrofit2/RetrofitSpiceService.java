@@ -13,7 +13,7 @@ import com.octo.android.robospice.SpiceService;
 import com.octo.android.robospice.request.CachedSpiceRequest;
 import com.octo.android.robospice.request.listener.RequestListener;
 import com.octo.android.robospice.request.retrofit2.RetrofitSpiceRequest;
-import com.octo.android.robospice.persistence.retrofit2.transformers.RetrofitResponseConverter;
+import com.octo.android.robospice.persistence.retrofit2.converter.RetrofitResponseConverter;
 
 public abstract class RetrofitSpiceService extends SpiceService {
 

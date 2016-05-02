@@ -1,4 +1,4 @@
-package com.octo.android.robospice.persistence.retrofit2.transformers;
+package com.octo.android.robospice.persistence.retrofit2.converter;
 
 import java.io.InputStream;
 import java.io.OutputStream;

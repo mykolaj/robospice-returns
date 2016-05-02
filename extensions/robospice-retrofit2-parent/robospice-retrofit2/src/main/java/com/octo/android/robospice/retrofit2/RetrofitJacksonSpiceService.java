@@ -8,7 +8,7 @@ import android.app.Application;
 import com.octo.android.robospice.persistence.CacheManager;
 import com.octo.android.robospice.persistence.exception.CacheCreationException;
 import com.octo.android.robospice.persistence.retrofit2.RetrofitObjectPersisterFactory;
-import com.octo.android.robospice.persistence.retrofit2.transformers.RetrofitJacksonConvertAware;
+import com.octo.android.robospice.persistence.retrofit2.converter.RetrofitJacksonResponseConverter;
 import retrofit2.converter.jackson.JacksonConverterFactory;
 
 /**
@@ -35,7 +35,7 @@ public abstract class RetrofitJacksonSpiceService extends RetrofitSpiceService {
     }
 
     @Override
-    protected RetrofitJacksonConvertAware createRetrofitToCacheConverter() {
-        return new RetrofitJacksonConvertAware();
+    protected RetrofitJacksonResponseConverter createRetrofitToCacheConverter() {
+        return new RetrofitJacksonResponseConverter();
     }
 }

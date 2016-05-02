@@ -1,4 +1,4 @@
-package com.octo.android.robospice.persistence.retrofit2.transformers;
+package com.octo.android.robospice.persistence.retrofit2.converter;
 
 import com.google.gson.Gson;
 import java.io.InputStream;
@@ -11,16 +11,16 @@ import roboguice.util.temp.Ln;
  * Saves and restores a data received by Retrofit into/from a file.
  * Uses Gson for the data conversion.
  */
-public class RetrofitGsonConvertAware implements RetrofitResponseConverter {
+public class RetrofitGsonResponseConverter implements RetrofitResponseConverter {
 
     private static final String LOG_TAG = "robospice-retrofit2";
     private final Gson gson;
 
-    public RetrofitGsonConvertAware() {
+    public RetrofitGsonResponseConverter() {
         this(new Gson());
     }
 
-    public RetrofitGsonConvertAware(Gson gson) {
+    public RetrofitGsonResponseConverter(Gson gson) {
         if (gson != null) {
             this.gson = gson;
         } else {

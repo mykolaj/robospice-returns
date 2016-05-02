@@ -1,4 +1,4 @@
-package com.octo.android.robospice.persistence.retrofit2.transformers;
+package com.octo.android.robospice.persistence.retrofit2.converter;
 
 import com.fasterxml.jackson.core.JsonGenerator;
 import com.fasterxml.jackson.core.JsonParser;
@@ -6,15 +6,15 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.InputStream;
 import java.io.OutputStream;
 
-public class RetrofitJacksonConvertAware implements RetrofitResponseConverter {
+public class RetrofitJacksonResponseConverter implements RetrofitResponseConverter {
 
     private final ObjectMapper objectMapper;
 
-    public RetrofitJacksonConvertAware() {
+    public RetrofitJacksonResponseConverter() {
         this(new ObjectMapper());
     }
 
-    public RetrofitJacksonConvertAware(ObjectMapper mapper) {
+    public RetrofitJacksonResponseConverter(ObjectMapper mapper) {
         if (mapper != null) {
             this.objectMapper = mapper;
         } else {

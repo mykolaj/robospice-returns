@@ -13,7 +13,7 @@ import com.octo.android.robospice.persistence.file.InFileObjectPersister;
 import java.io.Closeable;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
-import com.octo.android.robospice.persistence.retrofit2.transformers.RetrofitResponseConverter;
+import com.octo.android.robospice.persistence.retrofit2.converter.RetrofitResponseConverter;
 import org.apache.commons.lang3.exception.ExceptionUtils;
 
 public class RetrofitObjectPersister<T> extends InFileObjectPersister<T> {

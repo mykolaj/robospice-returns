@@ -8,7 +8,7 @@ import com.octo.android.robospice.persistence.exception.CacheCreationException;
 import com.octo.android.robospice.persistence.file.InFileObjectPersister;
 import com.octo.android.robospice.persistence.file.InFileObjectPersisterFactory;
 import java.util.List;
-import com.octo.android.robospice.persistence.retrofit2.transformers.RetrofitResponseConverter;
+import com.octo.android.robospice.persistence.retrofit2.converter.RetrofitResponseConverter;
 
 public class RetrofitObjectPersisterFactory extends InFileObjectPersisterFactory {
 
